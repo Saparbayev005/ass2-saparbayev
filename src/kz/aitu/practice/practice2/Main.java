@@ -15,10 +15,13 @@ public class Main {
             Train train = new Train();
             train.addLocomotive(new Locomotive(100));
             train.addLocomotive(new Locomotive(150));
-            train.addCar(new Car(50));
-            train.addCar(new Car(75));
+            train.addCar(new Car(50,35));
+            train.addCar(new Car(75,40));
 
-            // Insert locomotives into the database
+           System.out.println("Total Number of Passengers: " + train.getTotalnumpassanger() + " passengers\n");
+
+
+           // Insert locomotives into the database
             insertLocomotives(connection, train.getLocomotives());
 
             // Insert cars into the database

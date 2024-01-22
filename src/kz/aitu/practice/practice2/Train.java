@@ -41,4 +41,11 @@ public class Train {
 
         return totalCapacity;
     }
+    public int getTotalnumpassanger(){
+        int totalpassanger=0;
+        for (Car car : cars){
+            totalpassanger+=car.getNumpassenger();
+        }
+        return totalpassanger;
+    }
 }
