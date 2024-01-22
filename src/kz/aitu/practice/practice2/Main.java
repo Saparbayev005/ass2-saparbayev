@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 
 public class Main {
     public static void main(String[] args) {
-        try (Connection connection = DatabaseConnector.getConnection()) {
+       try (Connection connection = DatabaseConnector.getConnection()) {
             // Create a train and add objects
             Train train = new Train();
             train.addLocomotive(new Locomotive(100));
